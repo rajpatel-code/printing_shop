@@ -4,5 +4,6 @@ The Custom Print Shop website allows users to easily customize a variety of prod
 +  ---
 +
 + ### Live at :-
-+ - https://github.com/rajpatel-code/printing_shop/tree/main
++ - https://rajpatel-code.github.io/printing_shop/
+
     
