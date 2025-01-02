@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Print Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Design Your Own Products</h1>
+        <p>Customize your T-shirts, cups, mobile covers, and keychains with your unique designs. Perfect for personal gifts or promotional items!</p>
+        <a href="#products" class="btn">Start Designing</a>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="product-selection">
+        <h2>Choose Your Product</h2>
+        <div class="product-card" id="tshirt">
+            <img src="https://printo-s3.dietpixels.net/site/2024/Jack%20and%20Jones/Polo_1725448502.jpg?quality=70&format=webp&w=750" alt="T-shirt">
+            <h3>T-shirt</h3>
+            <button class="select-btn" onclick="selectProduct('T-shirt')">Select</button>
+        </div>
+        <div class="product-card" id="cup">
+            <img src="https://printo-s3.dietpixels.net/site/20220505_160543572300_07422d_Red.jpg?quality=70&format=webp&w=750" alt="Cup">
+            <h3>Cup</h3>
+            <button class="select-btn" onclick="selectProduct('Cup')">Select</button>
+        </div>
+        <div class="product-card" id="mobile-cover">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.wxWsHHp6bS_YaWPZl58jTQAAAA&pid=Api&P=0&h=180" alt="Mobile Cover">
+            <h3>Mobile Cover</h3>
+            <button class="select-btn" onclick="selectProduct('Mobile Cover')">Select</button>
+        </div>
+        <div class="product-card" id="keychain">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.zNdw3wuw39cCRkwr92IxawHaGm&pid=Api&P=0&h=180" alt="Keychain">
+            <h3>Keychain</h3>
+            <button class="select-btn" onclick="selectProduct('Keychain')">Select</button>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <h2>How It Works</h2>
+        <ol>
+            <li><strong>Choose a Product:</strong> Select from a range of customizable items like T-shirts, cups, mobile covers, and keychains.</li>
+            <li><strong>Upload Your Design:</strong> Upload your image or design for printing on the product.</li>
+            <li><strong>Preview & Adjust:</strong> See a live preview of how your design will look on the product and make adjustments as needed.</li>
+            <li><strong>Place Your Order:</strong> Finalize your order and have it delivered to your door. It's that simple!</li>
+        </ol>
+    </section>
+
+    <!-- Design Upload Section -->
+    <section id="design-upload" class="design-upload">
+        <h2>Upload Your Design</h2>
+        <p>Select your design file to preview it on your chosen product. Supported file types: JPG, PNG, GIF, SVG.</p>
+        <input type="file" id="designFile" accept="image/*">
+        <div id="designPreview" class="design-preview">
+            <p>Preview your design here</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need assistance, feel free to reach out to us!</p>
+        <p><strong>Name:</strong> Raj Patel</p>
+        <p><strong>Phone:</strong> 6266574848</p>
+        <p><strong>Email:</strong> <a href="mailto:mrrajpatel6266@gmail.com">mrrajpatel6266@gmail.com</a></p>
+
+        <form id="contactForm">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="message">Your Message:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br>
+
+            <button type="submit">Send Message</button>
+        </form>
+
